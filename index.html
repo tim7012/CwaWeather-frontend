@@ -15,14 +15,14 @@
 
     <style>
         :root {
-            --ac-green: #7DE1A9;
-            --ac-bg-pattern: #8FD8AF;
-            --ac-cream: #FFFEF2;
-            --ac-yellow: #F9F195;
-            --ac-brown: #796452;
-            --ac-blue: #4FB5D9;
-            --ac-dark: #58504A;
-            --ac-card-border: #E6E0C8;
+            --ac-green: #4FA7FF;       /* 主背景：海洋藍 */
+            --ac-bg-pattern: #57D0C9;  /* 浪花青藍（背景條紋） */
+            --ac-cream: #F0F9FF;       /* 卡片背景：海浪白 */
+            --ac-yellow: #FF8E6E;      /* 重點色：珊瑚橘 */
+            --ac-brown: #003A70;       /* 文字主色：深海藍 */
+            --ac-blue: #4FA7FF;        /* 小標籤藍 */
+            --ac-dark: #003A70;        /* 深色字體 */
+            --ac-card-border: #A7D9FF; /* 卡片邊框：淺海藍 */
         }
 
         * {
@@ -34,16 +34,13 @@
 
         body {
             font-family: 'Zen Maru Gothic', sans-serif;
-            background-color: var(--ac-green);
-            /* 更細緻的斜紋背景 */
-            background-image:
-                repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.2) 20px, rgba(255, 255, 255, 0.2) 40px);
+            background: linear-gradient(to bottom, #4FA7FF 0%, #003A70 100%); 
             min-height: 100vh;
             color: var(--ac-dark);
-            /* 防止 iOS 左右滑動 */
             overflow-x: hidden;
             padding-bottom: 20px;
         }
+
 
         /* 頂部狀態列 */
         .status-bar {
